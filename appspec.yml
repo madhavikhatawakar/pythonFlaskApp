@@ -5,7 +5,7 @@ files:
     source: /
   - 
     destination: /etc/apache2/sites-available/
-    source: /conf/*.conf
+    source: /conf/pythonflaskexample.conf
 hooks: 
   AfterInstall: 
     - 
