@@ -50,7 +50,7 @@ def set_properties (project):
     
     project.depends_on('flask')
     
-    project.set_property('coverage_break_build', True)
+    project.set_property('coverage_break_build', False)
     project.set_property('flake8_break_build', True)
 
     project.get_property('filter_resources_glob').append('**/helloworld/__init__.py')

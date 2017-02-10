@@ -1,0 +1,21 @@
+--- 
+artifacts: 
+  discard-paths: true
+  files: 
+    - appspec.yml
+    - dist\pythonFlaskApp-0.1.0.tar
+    - scripts\*
+phases: 
+  build: 
+    commands: 
+      - pyb
+  install: 
+    commands: 
+      - "pip install pybuilder"
+  post_build: 
+    commands: 
+      - "python setup.py sdist"
+  pre_build: 
+    commands: 
+      - "pyb install_dependencies"
+version: 0.1
